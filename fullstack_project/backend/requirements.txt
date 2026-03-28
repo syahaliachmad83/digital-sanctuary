@@ -1,7 +1,7 @@
 fastapi>=0.104.0
 uvicorn>=0.24.0
 sqlalchemy
-pydantic>=2.4.0
+pydantic[email]
 pydantic-settings>=2.0.0
 python-multipart>=0.0.6
 passlib[bcrypt]>=1.7.4
