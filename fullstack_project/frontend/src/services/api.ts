@@ -7,8 +7,8 @@ const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  // Opsional: timeout jika server FastAPI terlalu lama merespons
-  timeout: 10000, 
+  // Timeout diubah menjadi 60 detik karena Render free-tier butuh ~50 detik untuk bangun dari sleep mode
+  timeout: 60000, 
 });
 
 // 2. Request Interceptor (Satpam sebelum request berangkat)
